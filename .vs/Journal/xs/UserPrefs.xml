@@ -1,0 +1,55 @@
+﻿<Properties StartupConfiguration="{9F10C29E-5AC9-47A8-926E-D05D06F52F93}|Default">
+  <MonoDevelop.Ide.ItemProperties.Journal PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Journal/Startup.cs">
+    <Files>
+      <File FileName="Journal/Startup.cs" Line="16" Column="20" IsPinned="True" />
+      <File FileName="Journal/appsettings.json" IsPinned="True" />
+      <File FileName="Journal/Controllers/JournalController.cs" />
+      <File FileName="Journal/Views/Journal/Index.cshtml" />
+      <File FileName="Journal/Views/Shared/_Layout.cshtml" />
+      <File FileName="Journal/Views/_ViewStart.cshtml" />
+      <File FileName="Journal/Views/Journal/Welcome.cshtml" />
+      <File FileName="Journal/Models/Journal.cs" />
+      <File FileName="Journal/Journal.csproj" />
+      <File FileName="Journal/Program.cs" />
+      <File FileName="Journal/appsettings.Development.json" />
+      <File FileName="Journal/Properties/launchSettings.json" />
+      <File FileName="Journal/app.db" />
+      <File FileName="Journal/wwwroot/favicon.ico" />
+      <File FileName="Journal/Models/User.cs" />
+      <File FileName="Journal/Migrations/JournalContextModelSnapshot.cs" />
+      <File FileName="Journal/Migrations/20200610073141_InitialCreate.cs" />
+      <File FileName="Journal/Views/Journal/Create.cshtml" />
+      <File FileName="Journal/Views/Journal/Delete.cshtml" />
+      <File FileName="Journal/Views/Journal/Details.cshtml" />
+      <File FileName="Journal/Views/Journal/Edit.cshtml" />
+      <File FileName="Journal/Migrations/20200610083439_CreateInitial.cs" />
+      <File FileName="Journal/Data/JournalContext.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Journal" expanded="True">
+            <Node name="Journal" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Journal" expanded="True" />
+              </Node>
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
