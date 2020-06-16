@@ -31,6 +31,7 @@ namespace Journal
                 options.Password.RequiredUniqueChars = 1;
             })
                 .AddEntityFrameworkStores<JournalContext>();
+            services.AddControllersWithViews();
 
         }
 
@@ -53,15 +54,14 @@ namespace Journal
 
             app.UseRouting();
 
-            //app.UseAuthentication();
-            //app.UseAuthorization();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-                // endpoints.MapRazorPages();
             });
         }
     }

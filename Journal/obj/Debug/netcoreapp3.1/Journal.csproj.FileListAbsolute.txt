@@ -187,3 +187,5 @@
 /Users/helenewentworth/Projects/Journal/Journal/obj/Debug/netcoreapp3.1/Razor/Views/Journal/Delete.cshtml.g.cs
 /Users/helenewentworth/Projects/Journal/Journal/obj/Debug/netcoreapp3.1/Razor/Views/Journal/Details.cshtml.g.cs
 /Users/helenewentworth/Projects/Journal/Journal/obj/Debug/netcoreapp3.1/Razor/Views/Journal/Edit.cshtml.g.cs
+/Users/helenewentworth/Projects/Journal/Journal/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs
+/Users/helenewentworth/Projects/Journal/Journal/obj/Debug/netcoreapp3.1/Razor/Views/Account/Register.cshtml.g.cs

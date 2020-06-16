@@ -6,9 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Journal.Models;
-
-
-
+   
 namespace Journal.Controllers
 {
     public class JournalController : Controller
@@ -87,35 +85,35 @@ namespace Journal.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         //[ValidateAntiForgeryToken]
-//       // public async Task<IActionResult> Edit(int id, [Bind("Name,Surname,ID,ReleaseDate,Title,PostNumber")] Journal journal)
-//        {
-//            if (id != journal.ID)
-//            {
-//                return NotFound();
-//    }
+        //       // public async Task<IActionResult> Edit(int id, [Bind("Name,Surname,ID,ReleaseDate,Title,PostNumber")] Journal journal)
+        //        {
+        //            if (id != journal.ID)
+        //            {
+        //                return NotFound();
+        //    }
 
-//            if (ModelState.IsValid)
-//            {
-//                try
-//                {
-//                    _context.Update(journal);
-//                    await _context.SaveChangesAsync();
-//}
-//                catch (DbUpdateConcurrencyException)
-//                {
-//                    if (!JournalExists(journal.ID))
-//                    {
-//                        return NotFound();
-//                    }
-//                    else
-//                    {
-//                        throw;
-//                    }
-//                }
-//                return RedirectToAction(nameof(Index));
-//            }
-//            return View(journal);
-//        }
+        //            if (ModelState.IsValid)
+        //            {
+        //                try
+        //                {
+        //                    _context.Update(journal);
+        //                    await _context.SaveChangesAsync();
+        //}
+        //                catch (DbUpdateConcurrencyException)
+        //                {
+        //                    if (!JournalExists(journal.ID))
+        //                    {
+        //                        return NotFound();
+        //                    }
+        //                    else
+        //                    {
+        //                        throw;
+        //                    }
+        //                }
+        //                return RedirectToAction(nameof(Index));
+        //            }
+        //            return View(journal);
+        //        }
 
         // GET: Journal/Delete/5
         public async Task<IActionResult> Delete(int? id)
