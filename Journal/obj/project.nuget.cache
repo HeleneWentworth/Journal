@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OMoKrNM22ZXAj2Q+hedDXc8/6CfU7qAylTU3JGVFU2iVqt+Qn3eUsUOCVGy1WadB0J4kAoo7WHkWLRlIp5IvSg==",
+  "dgSpecHash": "NhKJedO7LqlO2R0sZJXCg1cKlaGVq4kIzIgEqGZXBMckAOcjB2RxJmLsPH58Nj+3WPCkwq4w27xQj3UJC9NR6w==",
   "success": true,
   "projectFilePath": "/Users/helenewentworth/Projects/Journal/Journal/Journal.csproj",
   "expectedPackageFiles": [
+    "/Users/helenewentworth/.nuget/packages/iisexpresstestkit/0.6.0/iisexpresstestkit.0.6.0.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/microsoft.aspnetcore.cryptography.internal/3.1.4/microsoft.aspnetcore.cryptography.internal.3.1.4.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/3.1.4/microsoft.aspnetcore.cryptography.keyderivation.3.1.4.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/microsoft.aspnetcore.diagnostics.entityframeworkcore/3.1.4/microsoft.aspnetcore.diagnostics.entityframeworkcore.3.1.4.nupkg.sha512",
@@ -33,7 +34,7 @@
     "/Users/helenewentworth/.nuget/packages/microsoft.entityframeworkcore.sqlite/3.1.5/microsoft.entityframeworkcore.sqlite.3.1.5.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/3.1.5/microsoft.entityframeworkcore.sqlite.core.3.1.5.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/microsoft.entityframeworkcore.sqlserver/3.1.5/microsoft.entityframeworkcore.sqlserver.3.1.5.nupkg.sha512",
-    "/Users/helenewentworth/.nuget/packages/microsoft.entityframeworkcore.tools/3.1.5/microsoft.entityframeworkcore.tools.3.1.5.nupkg.sha512",
+    "/Users/helenewentworth/.nuget/packages/microsoft.entityframeworkcore.tools/3.1.0/microsoft.entityframeworkcore.tools.3.1.0.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/microsoft.extensions.caching.abstractions/3.1.5/microsoft.extensions.caching.abstractions.3.1.5.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/microsoft.extensions.caching.memory/3.1.5/microsoft.extensions.caching.memory.3.1.5.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/microsoft.extensions.configuration/3.1.5/microsoft.extensions.configuration.3.1.5.nupkg.sha512",
@@ -63,6 +64,7 @@
     "/Users/helenewentworth/.nuget/packages/microsoft.visualstudio.web.codegeneration.templating/3.1.0/microsoft.visualstudio.web.codegeneration.templating.3.1.0.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/microsoft.visualstudio.web.codegeneration.utils/3.1.0/microsoft.visualstudio.web.codegeneration.utils.3.1.0.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/microsoft.visualstudio.web.codegenerators.mvc/3.1.0/microsoft.visualstudio.web.codegenerators.mvc.3.1.0.nupkg.sha512",
+    "/Users/helenewentworth/.nuget/packages/microsoft.web.xdt/2.1.2/microsoft.web.xdt.2.1.2.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/microsoft.win32.registry/4.5.0/microsoft.win32.registry.4.5.0.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/mysqlconnector/0.61.0/mysqlconnector.0.61.0.nupkg.sha512",
@@ -180,7 +182,33 @@
     "/Users/helenewentworth/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
     "/Users/helenewentworth/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "/Users/helenewentworth/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "/Users/helenewentworth/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "/Users/helenewentworth/.nuget/packages/xunit.abstractions/2.0.1/xunit.abstractions.2.0.1.nupkg.sha512",
+    "/Users/helenewentworth/.nuget/packages/xunit.assert/2.3.1/xunit.assert.2.3.1.nupkg.sha512",
+    "/Users/helenewentworth/.nuget/packages/xunit.core/2.3.1/xunit.core.2.3.1.nupkg.sha512",
+    "/Users/helenewentworth/.nuget/packages/xunit.extensibility.core/2.3.1/xunit.extensibility.core.2.3.1.nupkg.sha512",
+    "/Users/helenewentworth/.nuget/packages/xunit.extensibility.execution/2.3.1/xunit.extensibility.execution.2.3.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'IisExpressTestKit 0.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "IisExpressTestKit",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Web.Xdt 2.1.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Web.Xdt",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

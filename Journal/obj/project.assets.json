@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "IisExpressTestKit/0.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Web.Xdt": "2.1.2",
+          "xunit.assert": "2.3.1",
+          "xunit.core": "2.3.1"
+        },
+        "compile": {
+          "lib/net46/IisExpressTestKit.dll": {}
+        },
+        "runtime": {
+          "lib/net46/IisExpressTestKit.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.4": {
         "type": "package",
         "compile": {
@@ -551,10 +565,10 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/3.1.5": {
+      "Microsoft.EntityFrameworkCore.Tools/3.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "3.1.5"
+          "Microsoft.EntityFrameworkCore.Design": "3.1.0"
         },
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -927,6 +941,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
+        }
+      },
+      "Microsoft.Web.Xdt/2.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Web.XmlTransform.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.XmlTransform.dll": {}
         }
       },
       "Microsoft.Win32.Primitives/4.3.0": {
@@ -2859,10 +2882,87 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "xunit.abstractions/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/xunit.abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/xunit.abstractions.dll": {}
+        }
+      },
+      "xunit.assert/2.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/xunit.assert.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.assert.dll": {}
+        }
+      },
+      "xunit.core/2.3.1": {
+        "type": "package",
+        "dependencies": {
+          "xunit.extensibility.core": "[2.3.1]",
+          "xunit.extensibility.execution": "[2.3.1]"
+        },
+        "build": {
+          "build/xunit.core.props": {},
+          "build/xunit.core.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/xunit.core.props": {},
+          "buildMultiTargeting/xunit.core.targets": {}
+        }
+      },
+      "xunit.extensibility.core/2.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "xunit.abstractions": "2.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/xunit.core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.core.dll": {}
+        }
+      },
+      "xunit.extensibility.execution/2.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "xunit.extensibility.core": "[2.3.1]"
+        },
+        "compile": {
+          "lib/netstandard1.1/xunit.execution.dotnet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.execution.dotnet.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "IisExpressTestKit/0.6.0": {
+      "sha512": "pjkl6M0TRYoeQNwnOVM6KLPL3fXxtqx2fLi2h8bLplBfhxt3CJHXQVitV/0yXL5t5phnNCashj+UBXTOb+sYKg==",
+      "type": "package",
+      "path": "iisexpresstestkit/0.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "iisexpresstestkit.0.6.0.nupkg.sha512",
+        "iisexpresstestkit.nuspec",
+        "lib/net46/IisExpressTestKit.dll"
+      ]
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.4": {
       "sha512": "P6o80rVMEDv7zQQmIDoeoXHAXfS+bj2iwh5iURfd1EKrojxqVJW3zTYld2nleryT7BBlL7J0aT54tyLZyj8YRg==",
       "type": "package",
@@ -3581,18 +3681,18 @@
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/3.1.5": {
-      "sha512": "8vv6M1/HyoQuuvPZ9aL0HycCJdxEWLULMxFA9oRjRLBg70oo4Y2lKt7VpZT/zIOi/BFyq+H25JFT6+S7vYxakQ==",
+    "Microsoft.EntityFrameworkCore.Tools/3.1.0": {
+      "sha512": "b209nM8vHZXKG6hqZH2cYLpSVEmty9aDZf2gcYyJhpaEhf94AGdRfh8mlZCclJudjk07B37ebRysT1G//0IRzQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/3.1.5",
+      "path": "microsoft.entityframeworkcore.tools/3.1.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Icon.png",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.tools.3.1.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.3.1.0.nupkg.sha512",
         "microsoft.entityframeworkcore.tools.nuspec",
+        "packageIcon.png",
         "tools/EntityFrameworkCore.PS2.psd1",
         "tools/EntityFrameworkCore.PS2.psm1",
         "tools/EntityFrameworkCore.psd1",
@@ -4386,6 +4486,18 @@
         "lib/netstandard2.0/bootstrap4_identitygeneratorfilesconfig.json",
         "microsoft.visualstudio.web.codegenerators.mvc.3.1.0.nupkg.sha512",
         "microsoft.visualstudio.web.codegenerators.mvc.nuspec"
+      ]
+    },
+    "Microsoft.Web.Xdt/2.1.2": {
+      "sha512": "YIaNTOOtGzjF8CkQBOx3aUBWi0dD+g/nOjbpsVslx9G0/uldtpmoKLmyldmKdMv/gHs3qg40rBT3+wvEWoY5gg==",
+      "type": "package",
+      "path": "microsoft.web.xdt/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Microsoft.Web.XmlTransform.dll",
+        "microsoft.web.xdt.2.1.2.nupkg.sha512",
+        "microsoft.web.xdt.nuspec"
       ]
     },
     "Microsoft.Win32.Primitives/4.3.0": {
@@ -9106,10 +9218,86 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "xunit.abstractions/2.0.1": {
+      "sha512": "bDm/zdG5rnRDsobKuKwrvL4HccBdC0uvT12be6fG12P3d1U7u9Wkvfoq/PM2GeyIeb0Dtcmm/7k2oaawiqQ2Dg==",
+      "type": "package",
+      "path": "xunit.abstractions/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/xunit.abstractions.dll",
+        "lib/net35/xunit.abstractions.xml",
+        "lib/netstandard1.0/xunit.abstractions.dll",
+        "lib/netstandard1.0/xunit.abstractions.xml",
+        "xunit.abstractions.2.0.1.nupkg.sha512",
+        "xunit.abstractions.nuspec"
+      ]
+    },
+    "xunit.assert/2.3.1": {
+      "sha512": "+mUMp3aJOS0ag3qJ2tUhVa930KhwjyypxXT4Ab8lQozEQN8/xgkblQnYs0woIWpr2NbzEOxsZojytl9NBVRKxg==",
+      "type": "package",
+      "path": "xunit.assert/2.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/xunit.assert.dll",
+        "lib/netstandard1.1/xunit.assert.xml",
+        "xunit.assert.2.3.1.nupkg.sha512",
+        "xunit.assert.nuspec"
+      ]
+    },
+    "xunit.core/2.3.1": {
+      "sha512": "LOG4qOFuVQcjYcIuZbKeo03Uvng3lSb2gZJU9ANljwCf+PTd//iAMZS5qcJQZrjhndc4aOUlJGQy5wa0+/iZ6w==",
+      "type": "package",
+      "path": "xunit.core/2.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/xunit.core.props",
+        "build/xunit.core.targets",
+        "build/xunit.execution.desktop.dll",
+        "buildMultiTargeting/xunit.core.props",
+        "buildMultiTargeting/xunit.core.targets",
+        "xunit.core.2.3.1.nupkg.sha512",
+        "xunit.core.nuspec"
+      ]
+    },
+    "xunit.extensibility.core/2.3.1": {
+      "sha512": "1mgYqXeQfU+7zcSRW8/5Uf1jVZ5+5WELmi+BuRTh0xu/x0Q0gK0SuR3FLUF4BSd8sfZzvrRUrhWj3ltpyFxhrg==",
+      "type": "package",
+      "path": "xunit.extensibility.core/2.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/xunit.core.dll",
+        "lib/netstandard1.1/xunit.core.dll.tdnet",
+        "lib/netstandard1.1/xunit.core.xml",
+        "lib/netstandard1.1/xunit.runner.tdnet.dll",
+        "lib/netstandard1.1/xunit.runner.utility.net452.dll",
+        "xunit.extensibility.core.2.3.1.nupkg.sha512",
+        "xunit.extensibility.core.nuspec"
+      ]
+    },
+    "xunit.extensibility.execution/2.3.1": {
+      "sha512": "i8xrHfKC5dyBWQ7I15FePzm0m8KNToBsTleCCQbOQuXRPZIvupd4nnfaCPeJuKHHe7yJ8JGtWxjIgw0ow/cMhg==",
+      "type": "package",
+      "path": "xunit.extensibility.execution/2.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/xunit.execution.desktop.dll",
+        "lib/net452/xunit.execution.desktop.xml",
+        "lib/netstandard1.1/xunit.execution.dotnet.dll",
+        "lib/netstandard1.1/xunit.execution.dotnet.xml",
+        "xunit.extensibility.execution.2.3.1.nupkg.sha512",
+        "xunit.extensibility.execution.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "IisExpressTestKit >= 0.6.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.4",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.4",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.4",
@@ -9118,7 +9306,7 @@
       "Microsoft.EntityFrameworkCore.Relational >= 3.1.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.5",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.5",
-      "Microsoft.EntityFrameworkCore.Tools >= 3.1.5",
+      "Microsoft.EntityFrameworkCore.Tools >= 3.1.0",
       "Microsoft.IdentityModel.Tokens >= 6.6.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.0",
       "Pomelo.EntityFrameworkCore.MySql >= 3.1.1"
@@ -9137,7 +9325,7 @@
       "outputPath": "/Users/helenewentworth/Projects/Journal/Journal/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/helenewentworth/.config/NuGet/NuGet.Config"
+        "/Users/helenewentworth/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -9159,6 +9347,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "IisExpressTestKit": {
+            "target": "Package",
+            "version": "[0.6.0, )"
+          },
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
             "target": "Package",
             "version": "[3.1.4, )"
@@ -9197,7 +9389,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.1.5, )"
+            "version": "[3.1.0, )"
           },
           "Microsoft.IdentityModel.Tokens": {
             "target": "Package",
@@ -9233,5 +9425,27 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.300/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'IisExpressTestKit 0.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "IisExpressTestKit",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Web.Xdt 2.1.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Web.Xdt",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

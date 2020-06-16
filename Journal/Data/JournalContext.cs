@@ -3,8 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Journal.Models;
 using Microsoft.IdentityModel.Tokens;
+using Journal.Models.Configuration;
 
-namespace Journal.Models
+namespace Journal.Data
 {
     public class JournalContext : IdentityDbContext<User>
     {
@@ -17,11 +18,12 @@ namespace Journal.Models
         {
             base.OnModelCreating(modelBuilder);
 
-            // modelBuilder.ApplyConfiguration(new RoleConfiguration());
+             modelBuilder.ApplyConfiguration(new RoleConfiguration());
 
         }
 
-        public DbSet<Journal> Journal { get; set; }
+       public DbSet<User> User { get; set; }
+        public DbSet<Journal.Models.JournalModel>Journal { get; set; }
     }
 }
 

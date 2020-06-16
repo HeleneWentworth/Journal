@@ -42,8 +42,7 @@ namespace Journal.Migrations
                     LockoutEnabled = table.Column<bool>(nullable: false),
                     AccessFailedCount = table.Column<int>(nullable: false),
                     FirstName = table.Column<string>(nullable: true),
-                    LastName = table.Column<string>(nullable: true),
-                    ID = table.Column<string>(nullable: true)
+                    LastName = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -172,6 +171,16 @@ namespace Journal.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[] { "924a54b3-b5a2-4311-b1ed-41cbdf31cbd8", "6be88fca-95cf-42eb-9d47-cdfb2deb875f", "Visitor", "VISITOR" });
+
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[] { "298a105b-821c-4ae0-9fc3-563b3b25ccf6", "dc51d9bd-779f-4676-96c1-2b6c18aa864e", "Administrator", "ADMINISTRATOR" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

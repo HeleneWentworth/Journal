@@ -14,7 +14,7 @@
         "outputPath": "/Users/helenewentworth/Projects/Journal/Journal/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/helenewentworth/.config/NuGet/NuGet.Config"
+          "/Users/helenewentworth/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -36,6 +36,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "IisExpressTestKit": {
+              "target": "Package",
+              "version": "[0.6.0, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.4, )"
@@ -74,7 +78,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.5, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
