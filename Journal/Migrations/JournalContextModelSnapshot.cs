@@ -23,22 +23,27 @@ namespace Journal.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("Name")
-                        .HasColumnType("int");
+                    b.Property<string>("Body")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<decimal>("PostNumber")
-                        .HasColumnType("decimal(65,30)");
-
-                    b.Property<DateTime>("ReleaseDate")
+                    b.Property<DateTime>("Date")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("Surname")
+                    b.Property<string>("Day")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<string>("Title")
+                    b.Property<string>("Name")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Symptoms")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
 
                     b.HasKey("ID");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Journal");
                 });
@@ -141,15 +146,15 @@ namespace Journal.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "924a54b3-b5a2-4311-b1ed-41cbdf31cbd8",
-                            ConcurrencyStamp = "6be88fca-95cf-42eb-9d47-cdfb2deb875f",
+                            Id = "beaac3b2-a603-4672-8164-0eb361dd2ac9",
+                            ConcurrencyStamp = "d642a4e8-874f-43c5-9c3f-972be7375102",
                             Name = "Visitor",
                             NormalizedName = "VISITOR"
                         },
                         new
                         {
-                            Id = "298a105b-821c-4ae0-9fc3-563b3b25ccf6",
-                            ConcurrencyStamp = "dc51d9bd-779f-4676-96c1-2b6c18aa864e",
+                            Id = "4e1ce1b8-c3d4-4de8-be20-29388102c7ed",
+                            ConcurrencyStamp = "c0c9a731-9e97-4459-8d02-a3c8ba2fb830",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });
@@ -255,6 +260,13 @@ namespace Journal.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("Journal.Models.JournalModel", b =>
+                {
+                    b.HasOne("Journal.Models.User", null)
+                        .WithMany("JournalModel")
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

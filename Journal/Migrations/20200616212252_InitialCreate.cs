@@ -38,7 +38,7 @@ namespace Journal.Migrations
                     PhoneNumber = table.Column<string>(nullable: true),
                     PhoneNumberConfirmed = table.Column<bool>(nullable: false),
                     TwoFactorEnabled = table.Column<bool>(nullable: false),
-                    LockoutEnd = table.Column<DateTimeOffset>(nullable: true, type: "DateTime"),
+                    LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
                     LockoutEnabled = table.Column<bool>(nullable: false),
                     AccessFailedCount = table.Column<int>(nullable: false),
                     FirstName = table.Column<string>(nullable: true),
@@ -47,23 +47,6 @@ namespace Journal.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Journal",
-                columns: table => new
-                {
-                    ID = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<int>(nullable: false),
-                    Surname = table.Column<string>(nullable: true),
-                    ReleaseDate = table.Column<DateTime>(nullable: false),
-                    Title = table.Column<string>(nullable: true),
-                    PostNumber = table.Column<decimal>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Journal", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
@@ -172,15 +155,39 @@ namespace Journal.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.InsertData(
-                table: "AspNetRoles",
-                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "924a54b3-b5a2-4311-b1ed-41cbdf31cbd8", "6be88fca-95cf-42eb-9d47-cdfb2deb875f", "Visitor", "VISITOR" });
+            migrationBuilder.CreateTable(
+                name: "Journal",
+                columns: table => new
+                {
+                    ID = table.Column<int>(nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    Day = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(nullable: true),
+                    Date = table.Column<DateTime>(nullable: false),
+                    Symptoms = table.Column<string>(nullable: true),
+                    Body = table.Column<string>(nullable: true),
+                    UserId = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Journal", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_Journal_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
 
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "298a105b-821c-4ae0-9fc3-563b3b25ccf6", "dc51d9bd-779f-4676-96c1-2b6c18aa864e", "Administrator", "ADMINISTRATOR" });
+                values: new object[] { "beaac3b2-a603-4672-8164-0eb361dd2ac9", "d642a4e8-874f-43c5-9c3f-972be7375102", "Visitor", "VISITOR" });
+
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[] { "4e1ce1b8-c3d4-4de8-be20-29388102c7ed", "c0c9a731-9e97-4459-8d02-a3c8ba2fb830", "Administrator", "ADMINISTRATOR" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -218,6 +225,11 @@ namespace Journal.Migrations
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Journal_UserId",
+                table: "Journal",
+                column: "UserId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

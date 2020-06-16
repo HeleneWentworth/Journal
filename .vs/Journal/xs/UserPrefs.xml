@@ -1,38 +1,27 @@
 ﻿<Properties StartupConfiguration="{9F10C29E-5AC9-47A8-926E-D05D06F52F93}|Default">
   <MonoDevelop.Ide.ItemProperties.Journal PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Journal/Migrations/20200616111826_InitialCreate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Journal/Data/JournalContext.cs">
     <Files>
-      <File FileName="Journal/Startup.cs" Line="25" Column="35" IsPinned="True" />
-      <File FileName="Journal/appsettings.json" IsPinned="True" />
-      <File FileName="Journal/Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="Journal/Controllers/JournalController.cs" Line="103" Column="128" />
-      <File FileName="Journal/Views/Journal/Index.cshtml" Line="30" Column="22" />
-      <File FileName="Journal/Views/Shared/_Layout.cshtml" />
+      <File FileName="Journal/Views/Account/Register.cshtml" Line="1" Column="19" IsPinned="True" />
+      <File FileName="Journal/Models/JournalModel.cs" Line="16" Column="22" />
+      <File FileName="Journal/Views/Journal/Details.cshtml" Line="40" Column="49" />
+      <File FileName="Journal/Views/Journal/Delete.cshtml" Line="18" Column="49" />
+      <File FileName="Journal/Views/Journal/Index.cshtml" Line="52" Column="56" />
+      <File FileName="Journal/Views/Journal/Create.cshtml" Line="39" Column="39" />
+      <File FileName="Journal/Views/Journal/Edit.cshtml" Line="18" Column="47" />
+      <File FileName="Journal/Controllers/JournalController.cs" Line="84" Column="39" />
+      <File FileName="Journal/Startup.cs" Line="2" Column="1" />
       <File FileName="Journal/Views/Journal/Welcome.cshtml" Line="1" Column="1" />
-      <File FileName="Journal/Models/Journal.cs" Line="11" Column="30" />
-      <File FileName="Journal/Journal.csproj" />
-      <File FileName="Journal/Program.cs" />
-      <File FileName="Journal/appsettings.Development.json" />
-      <File FileName="Journal/Properties/launchSettings.json" Line="7" Column="23" />
-      <File FileName="Journal/app.db" />
-      <File FileName="Journal/wwwroot/favicon.ico" />
-      <File FileName="Journal/Models/User.cs" Line="6" Column="36" />
-      <File FileName="Journal/Views/Journal/Create.cshtml" Line="1" Column="1" />
-      <File FileName="Journal/Views/Journal/Delete.cshtml" Line="1" Column="35" />
-      <File FileName="Journal/Views/Journal/Details.cshtml" Line="1" Column="35" />
-      <File FileName="Journal/Views/Journal/Edit.cshtml" Line="1" Column="35" />
-      <File FileName="Journal/Data/JournalContext.cs" Line="31" Column="1" />
-      <File FileName="Journal/Views/Shared/_LoginPartial.cshtml" />
-      <File FileName="Journal/Models/UserLoginModel.cs" />
-      <File FileName="Journal/Models/UserRegistrationModel.cs" />
-      <File FileName="Journal/Views/Account/Register.cshtml" Line="1" Column="19" />
-      <File FileName="Journal/Controllers/AccountController.cs" Line="18" Column="6" />
-      <File FileName="Journal/Views/Account/Login.cshtml" Line="1" Column="37" />
-      <File FileName="Journal/Controllers/UsersController.cs" Line="39" Column="41" />
+      <File FileName="Journal/wwwroot/css/site.css" Line="64" Column="30" />
+      <File FileName="Journal/Controllers/AccountController.cs" Line="129" Column="1" />
       <File FileName="Journal/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="Journal/wwwroot/css/site.css" Line="64" Column="32" />
-      <File FileName="Journal/Migrations/JournalContextModelSnapshot.cs" Line="1" Column="1" />
-      <File FileName="Journal/Migrations/20200616111826_InitialCreate.cs" Line="2" Column="1" />
+      <File FileName="Journal/Controllers/UsersController.cs" Line="1" Column="1" />
+      <File FileName="Journal/Data/JournalContext.cs" Line="26" Column="1" />
+      <File FileName="Journal/Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="Journal/Models/User.cs" Line="20" Column="1" />
+      <File FileName="Journal/Models/UserLoginModel.cs" Line="1" Column="1" />
+      <File FileName="Journal/appsettings.json" Line="10" Column="5" />
+      <File FileName="Journal/Views/Account/Login.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -41,9 +30,6 @@
             <Node name="Journal" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
-              <Node name="Migrations" expanded="True">
-                <Node name="20200616111826_InitialCreate.cs" expanded="True" selected="True" />
-              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">

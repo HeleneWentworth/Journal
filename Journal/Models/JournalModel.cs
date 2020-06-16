@@ -9,14 +9,16 @@ namespace Journal.Models
 {
     
     public class JournalModel
-    { 
-        public int Name { get; set; }
-        public string Surname { get; set; }
+    {
+        public string Day { get; set; }
+        public string Name { get; set; }
+        
         public int ID { get; set; }
 
         [DataType(DataType.Date)]
-        public DateTime ReleaseDate { get; set; }
-        public string Title { get; set; }
-        public decimal PostNumber { get; set; }
+        public DateTime Date { get; set; }
+        public string Symptoms { get; set; }
+        public string Body { get; set; }
+
     }
 }

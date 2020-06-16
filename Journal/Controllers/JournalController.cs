@@ -34,9 +34,18 @@ namespace Journal.Controllers
 
 
         // GET: Journal
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Journal.ToListAsync());
+            var journal = from m in _context.Journal
+                          select m;
+
+            if(!String.IsNullOrEmpty(searchString))
+            {
+                journal = journal.Where(s => s.Symptoms.Contains(searchString));
+
+            }
+
+            return View(await journal.ToListAsync());
         }
 
         // GET: Journal/Details/5
@@ -68,7 +77,7 @@ namespace Journal.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Name,Surname,ID,ReleaseDate,Title,PostNumber")] JournalModel journal)
+        public async Task<IActionResult> Create([Bind("Name,ID,Date,Day,Symptoms, Body")] JournalModel journal)
         {
             if (ModelState.IsValid)
             {
@@ -100,7 +109,7 @@ namespace Journal.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-              public async Task<IActionResult> Edit(int id, [Bind("Name,Surname,ID,ReleaseDate,Title,PostNumber")] JournalModel journal)
+              public async Task<IActionResult> Edit(int id, [Bind("Name,ID,Date,Day,Symptoms,Body")] JournalModel journal)
                 {
                     if (id != journal.ID)
                     {
