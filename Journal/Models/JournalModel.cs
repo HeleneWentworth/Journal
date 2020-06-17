@@ -20,5 +20,11 @@ namespace Journal.Models
         public string Symptoms { get; set; }
         public string Body { get; set; }
 
-    }
+  
+   public string OwnerId { get; set; }
+    public User Owner { get; set; }
+    public ICollection<UserJournal> UserJournal{ get; set; }
+
+    public List<string> UserIds { get; set; }
+}
 }

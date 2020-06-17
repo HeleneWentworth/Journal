@@ -36,4 +36,7 @@
     <Folder Include="Models\Configuration\" />
     <Folder Include="Views\Account\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Models\UserJournal.cshtml" />
+  </ItemGroup>
 </Project>

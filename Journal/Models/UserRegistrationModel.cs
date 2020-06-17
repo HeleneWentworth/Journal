@@ -5,7 +5,7 @@ namespace Journal.Models
 {
     public class UserRegistrationModel
     {
-
+        public int ID { get; set; }
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
