@@ -108,6 +108,7 @@ namespace Journal.Controllers
             System.Diagnostics.Debug.WriteLine("Logout");
             await _signInManager.SignOutAsync();
             return RedirectToAction("index", "home");
+
         }
 
 

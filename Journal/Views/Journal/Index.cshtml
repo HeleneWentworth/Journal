@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h3>This is where you will create your daily Journal entry.</h3>
 <br />
 
     <button>
@@ -16,12 +16,17 @@
 
 <form asp-controller="Journal" asp-action="Index">
     <p>
-        Symptoms: <input type="text" name="SearchString">
-        <input type="submit" value="Filter" />
+        <div class="search">
+
+            Symptoms: <input type="text" name="SearchString">
+            <input type="submit" value="Filter" />
+        </div>
+       
     </p>
 </form>
 
-
+<br/>
+<br/>
 <table class="table">
     <thead>
         <tr>

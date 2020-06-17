@@ -27,6 +27,10 @@ namespace Journal.Data
 
        public DbSet<User> User { get; set; }
         public DbSet<Journal.Models.JournalModel>Journal { get; set; }
+
+
+
+
     }
 }
 

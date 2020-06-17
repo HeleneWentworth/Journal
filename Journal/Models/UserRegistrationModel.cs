@@ -21,6 +21,5 @@ namespace Journal.Models
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Password does not match")]
         public string ConfirmPassword { get; set; }
-
     }
 }

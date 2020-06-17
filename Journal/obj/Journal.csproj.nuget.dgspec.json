@@ -14,7 +14,7 @@
         "outputPath": "/Users/helenewentworth/Projects/Journal/Journal/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/helenewentworth/.nuget/NuGet/NuGet.Config"
+          "/Users/helenewentworth/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -36,6 +36,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "IisExpressTestKit": {
               "target": "Package",
               "version": "[0.6.0, )"
