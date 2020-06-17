@@ -35,6 +35,7 @@
     <Folder Include="Data\" />
     <Folder Include="Models\Configuration\" />
     <Folder Include="Views\Account\" />
+    <Folder Include="wwwroot\img\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Models\UserJournal.cshtml" />

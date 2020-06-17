@@ -79,3 +79,33 @@ body {
     background-color:aqua;
 }
 
+p{
+    font-family:"Quicksand","Montserrat";
+    font-size:20px;
+    color:black;
+}
+
+h1{
+    font-family: "Quicksand","Montserrat";
+    font-size: 28px;
+    color: black;
+}
+
+h2 {
+    font-family: "Quicksand","Montserrat";
+    font-size: 26px;
+    color: black;
+}
+
+h3 {
+    font-family: "Quicksand","Montserrat";
+    font-size: 24px;
+    color: black;
+}
+
+h4 {
+    font-family: "Quicksand","Montserrat";
+    font-size: 20px;
+    color: black;
+}
+

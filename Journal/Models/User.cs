@@ -13,7 +13,7 @@ namespace Journal.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public ICollection<JournalModel> JournalModel { get; set; }
-        public ICollection<UserJournal> UserJournalModel { get; set; }
+        //public ICollection<UserJournal> UserJournalModel { get; set; }
 
 
     }

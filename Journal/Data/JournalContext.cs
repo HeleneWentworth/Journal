@@ -20,23 +20,23 @@ namespace Journal.Data
 
              modelBuilder.ApplyConfiguration(new RoleConfiguration());
 
-            modelBuilder.Entity<JournalModel>()
-               .HasOne(t => t.Owner)
-               .WithMany(o => o.JournalModel)
-               .HasForeignKey(t => t.OwnerId);
+            //modelBuilder.Entity<JournalModel>()
+            //   .HasOne(t => t.Owner)
+            //   .WithMany(o => o.JournalModel)
+            //   .HasForeignKey(t => t.OwnerId);
 
-            modelBuilder.Entity<UserJournal>()
-                .HasKey(ut => new { ut.JournalId, ut.UserId });
+            //modelBuilder.Entity<UserJournal>()
+            //    .HasKey(ut => new { ut.JournalId, ut.UserId });
 
-            modelBuilder.Entity<UserJournal>()
-                .HasOne(ut => ut.User)
-                .WithMany(u => u.UserJournalModel)
-                .HasForeignKey(ut => ut.UserId);
+            //modelBuilder.Entity<UserJournal>()
+            //    .HasOne(ut => ut.User)
+            //    .WithMany(u => u.UserJournalModel)
+            //    .HasForeignKey(ut => ut.UserId);
 
-            modelBuilder.Entity<UserJournal>()
-                .HasOne(ut => ut.Journal)
-                .WithMany(t => t.UserJournal)
-                .HasForeignKey(ut => ut.JournalId);
+            //modelBuilder.Entity<UserJournal>()
+            //    .HasOne(ut => ut.Journal)
+            //    .WithMany(t => t.UserJournal)
+            //    .HasForeignKey(ut => ut.JournalId);
         }
 
 
