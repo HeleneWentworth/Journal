@@ -50,6 +50,23 @@ namespace Journal.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "UserRegistrationModelsJournal",
+                columns: table => new
+                {
+                    ID = table.Column<int>(nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    FirstName = table.Column<string>(nullable: true),
+                    LastName = table.Column<string>(nullable: true),
+                    Email = table.Column<string>(nullable: false),
+                    Password = table.Column<string>(nullable: false),
+                    ConfirmPassword = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserRegistrationModelsJournal", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
@@ -182,12 +199,12 @@ namespace Journal.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "beaac3b2-a603-4672-8164-0eb361dd2ac9", "d642a4e8-874f-43c5-9c3f-972be7375102", "Visitor", "VISITOR" });
+                values: new object[] { "e761a684-3cfc-4ca6-867f-4a265df61725", "51d8c007-4cb4-4ec5-abdb-eedcc6baabcb", "Visitor", "VISITOR" });
 
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "4e1ce1b8-c3d4-4de8-be20-29388102c7ed", "c0c9a731-9e97-4459-8d02-a3c8ba2fb830", "Administrator", "ADMINISTRATOR" });
+                values: new object[] { "028048ca-4d77-4002-9576-66c39e2efdb7", "7b119baf-4439-46ce-9947-c9eedf4cb90f", "Administrator", "ADMINISTRATOR" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -251,6 +268,9 @@ namespace Journal.Migrations
 
             migrationBuilder.DropTable(
                 name: "Journal");
+
+            migrationBuilder.DropTable(
+                name: "UserRegistrationModelsJournal");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

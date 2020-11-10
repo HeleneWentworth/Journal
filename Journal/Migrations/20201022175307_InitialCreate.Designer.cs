@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Journal.Migrations
 {
     [DbContext(typeof(JournalContext))]
-    [Migration("20200616212252_InitialCreate")]
+    [Migration("20201022175307_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -120,6 +120,34 @@ namespace Journal.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
+            modelBuilder.Entity("Journal.Models.UserRegistrationModel", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConfirmPassword")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("UserRegistrationModelsJournal");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -148,15 +176,15 @@ namespace Journal.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "beaac3b2-a603-4672-8164-0eb361dd2ac9",
-                            ConcurrencyStamp = "d642a4e8-874f-43c5-9c3f-972be7375102",
+                            Id = "e761a684-3cfc-4ca6-867f-4a265df61725",
+                            ConcurrencyStamp = "51d8c007-4cb4-4ec5-abdb-eedcc6baabcb",
                             Name = "Visitor",
                             NormalizedName = "VISITOR"
                         },
                         new
                         {
-                            Id = "4e1ce1b8-c3d4-4de8-be20-29388102c7ed",
-                            ConcurrencyStamp = "c0c9a731-9e97-4459-8d02-a3c8ba2fb830",
+                            Id = "028048ca-4d77-4002-9576-66c39e2efdb7",
+                            ConcurrencyStamp = "7b119baf-4439-46ce-9947-c9eedf4cb90f",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });
