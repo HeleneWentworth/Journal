@@ -1,65 +1,11 @@
 ﻿<Properties StartupConfiguration="{9F10C29E-5AC9-47A8-926E-D05D06F52F93}|Default">
   <MonoDevelop.Ide.ItemProperties.Journal PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Journal/Views/Home/Index.cshtml">
-    <Files>
-      <File FileName="Journal/Views/Account/Register.cshtml" Line="37" Column="13" IsPinned="True" />
-      <File FileName="Journal/Controllers/HomeController.cs" IsPinned="True" />
-      <File FileName="Journal/Models/JournalModel.cs" Line="1" Column="1" />
-      <File FileName="Journal/Views/Journal/Details.cshtml" />
-      <File FileName="Journal/Views/Journal/Delete.cshtml" />
-      <File FileName="Journal/Views/Journal/Index.cshtml" Line="10" Column="10" />
-      <File FileName="Journal/Views/Journal/Create.cshtml" />
-      <File FileName="Journal/Models/User.cs" />
-      <File FileName="Journal/Data/JournalContext.cs" />
-      <File FileName="Journal/Controllers/AccountController.cs" />
-      <File FileName="Journal/Views/Account/Login.cshtml" />
-      <File FileName="Journal/Views/Shared/_Layout.cshtml" Line="46" Column="30" />
-      <File FileName="Journal/Views/Shared/_LoginPartial.cshtml" Line="1" Column="1" />
-      <File FileName="Journal/Startup.cs" Line="1" Column="1" />
-      <File FileName="Journal/Models/UserRegistrationModel.cs" />
-      <File FileName="Journal/Views/Journal/Welcome.cshtml" />
-      <File FileName="Journal/Views/Home/Index.cshtml" Line="41" Column="1" />
-      <File FileName="Journal/Models/UserLoginModel.cs" />
-      <File FileName="Journal/Controllers/UsersController.cs" />
-      <File FileName="Journal/Views/Journal/Edit.cshtml" />
-      <File FileName="Journal/Views/Shared/_ValidationScriptsPartial.cshtml" />
-      <File FileName="Journal/Models/UserJournal.cs" />
-      <File FileName="Journal/Models/ErrorViewModel.cs" />
-      <File FileName="Journal/Controllers/JournalController.cs" />
-      <File FileName="Journal/wwwroot/css/site.css" Line="49" Column="29" />
-      <File FileName="Journal/wwwroot/lib/bootstrap/dist/css/bootstrap.css" Line="4153" Column="26" />
-      <File FileName="Journal/Views/Home/Privacy.cshtml" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Journal" expanded="True">
-            <Node name="Journal" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Account" expanded="True" />
-                <Node name="Home" expanded="True" />
-                <Node name="Journal" expanded="True" />
-                <Node name="Shared" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-                <Node name="images" expanded="True" />
-                <Node name="img" selected="True" />
-                <Node name="lib" expanded="True">
-                  <Node name="bootstrap" expanded="True">
-                    <Node name="dist" expanded="True">
-                      <Node name="css" expanded="True" />
-                    </Node>
-                  </Node>
-                </Node>
-              </Node>
-              <Node name="appsettings.json" expanded="True" />
-            </Node>
-          </Node>
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="Journal" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

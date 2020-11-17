@@ -73,9 +73,11 @@ a.navbar-brand {
 
 
 .btn-primary {
-    color: #fff;
+    border: none !important;
     background-color: #71A89E !important;
-    border-color: #1861ac;
+    border-radius: 5px;
+    font-size: 14px !important;
+    color: #000000 !important;
 }
 
 
@@ -154,7 +156,7 @@ p{
 
 h1 {
     font-family: "Quicksand","Montserrat";
-    font-size: 24px;
+    font-size: 28px;
     color: black;
     text-align: left !important;
 }

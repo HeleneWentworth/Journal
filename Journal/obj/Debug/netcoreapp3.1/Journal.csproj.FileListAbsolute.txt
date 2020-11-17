@@ -7,7 +7,6 @@
 /Users/helenewentworth/Projects/Journal/Journal/obj/Debug/netcoreapp3.1/Journal.RazorAssemblyInfo.cs
 /Users/helenewentworth/Projects/Journal/Journal/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/helenewentworth/Projects/Journal/Journal/bin/Debug/netcoreapp3.1/appsettings.json
-/Users/helenewentworth/Projects/Journal/Journal/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /Users/helenewentworth/Projects/Journal/Journal/bin/Debug/netcoreapp3.1/Journal.StaticWebAssets.xml
 /Users/helenewentworth/Projects/Journal/Journal/bin/Debug/netcoreapp3.1/app.db
 /Users/helenewentworth/Projects/Journal/Journal/bin/Debug/netcoreapp3.1/Journal.deps.json
@@ -197,3 +196,4 @@
 /Users/helenewentworth/Projects/Journal/Journal/bin/Debug/netcoreapp3.1/xunit.execution.dotnet.dll
 /Users/helenewentworth/Projects/Journal/Journal/bin/Debug/netcoreapp3.1/AutoMapper.dll
 /Users/helenewentworth/Projects/Journal/Journal/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/helenewentworth/Projects/Journal/Journal/obj/Debug/netcoreapp3.1/scopedcss/bundle/Journal.styles.css
